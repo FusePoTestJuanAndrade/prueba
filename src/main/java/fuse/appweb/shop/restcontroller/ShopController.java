@@ -6,6 +6,7 @@
 
 package fuse.appweb.shop.restcontroller;
 import fuse.appweb.shop.services.OrderServices;
+import fuse.appweb.shop.model.Product;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
