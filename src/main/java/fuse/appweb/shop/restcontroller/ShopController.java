@@ -122,6 +122,17 @@ public class ShopController {
             }  
     }
     
+        @RequestMapping(method = RequestMethod.POST, value = "/products")
+    public ResponseEntity<?> manejadorPostRecursoXX(@RequestBody Product newProduct){
+            try {
+                    services.addProduct(newProduct);
+                    return new ResponseEntity<>(HttpStatus.CREATED);
+            } catch (Exception ex) {
+                    Logger.getLogger(OrdersAPIController.class.getName()).log(Level.SEVERE, null, ex);
+                    return new ResponseEntity<>(ex,HttpStatus.FORBIDDEN);
+            }
+
+    }
     /*
     @RequestMapping(method = RequestMethod.POST)	
     public ResponseEntity<?> manejadorPostRecursoXX(@RequestBody Order newOrder){
