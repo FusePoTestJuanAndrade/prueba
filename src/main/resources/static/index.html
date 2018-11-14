@@ -43,7 +43,7 @@
 
 	</head>
 	<body>
-		
+	<!--body onload="OrdersControllerModule.getProducts()"-->	
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
@@ -85,57 +85,57 @@
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/img_bg_1.jpg);">
+		   	<li style="background-image: url(images/Omega.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<div class="desc">
-		   						<span class="price">$800</span>
-		   						<h2>Alato Cabinet</h2>
-		   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+		   						<span class="price">$8870000</span>
+		   						<h2>Omega Men's Seamaster 300M Chronometer</h2>
+		   						<p>Precise automatic swiss Movement, Sapphire crystal; Brushed and polished stainless steel case and bracelet.</p>
 			   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_2.jpg);">
+		   	<li style="background-image: url(images/Beats.jpg);">
 		   		<div class="container">
 		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<div class="desc">
-		   						<span class="price">$530</span>
-		   						<h2>The Haluz Rocking Chair</h2>
-		   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+		   						<span class="price">$380000</span>
+		   						<h2>Beats By Dre Solo 2 Luxe Edition</h2>
+		   						<p>On-Ear Headphones | Black (WIRED, Not Wireless), Custom-fit feeling with curved frame, Ergonomic earcups, Refined glossy finish.</p>
 			   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_3.jpg);">
+		   	<li style="background-image: url(images/Gibson.jpg);">
 		   		<div class="container">
 		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<div class="desc">
-		   						<span class="price">$750</span>
-		   						<h2>Alato Cabinet</h2>
-		   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+		   						<span class="price">$6500300</span>
+		   						<h2>Gibson Les Paul Custom Electric Guitar</h2>
+		   						<p>The body of the Les Paul Signature has the modern weight relieved Mahogany body with 3 ply W/B/W binding and a AA figured Maple top. It also has a Mahogany neck with a 50's Round Profile.</p>
 			   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_4.jpg);">
+		   	<li style="background-image: url(images/Alienware17.jpg);">
 		   		<div class="container">
 		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<div class="desc">
-		   						<span class="price">$540</span>
-		   						<h2>The WW Chair</h2>
-		   						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+		   						<span class="price">$6100000</span>
+		   						<h2>Alienware 17 ANW17-2136SLV 17 Inch Laptop</h2>
+		   						<p>Intel Core i7-4710HQ Processor (Quad-Core, 6MB Cache, up to 3.5GHz w/ Turbo Boost), 8 GB DDR3 RAM, 1000 GB 5400 rpm Hard Drive, 17.3-Inch Screen, NVIDIA GeForce GTX 970M with 3GB GDDR5</p>
 			   					<p><a href="single.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
@@ -147,7 +147,7 @@
 	</aside>
 
 	<div id="fh5co-product">
-		<div class="container">
+		<div class="container" id="magic">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Products</h2>
@@ -262,7 +262,9 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+	<!-- Controllers -->
+	<script src="js/RestController.js"></script>
+	<script src="js/ShopController.js"></script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -279,6 +281,7 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 	</body>
 </html>

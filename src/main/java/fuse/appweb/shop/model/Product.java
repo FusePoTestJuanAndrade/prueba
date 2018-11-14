@@ -11,16 +11,19 @@ public class Product  {
         private String type;
         
         private String description;
+        private String url;
         
         private int cantidad;
+        
 
         public Product(){
             
         }
         
         
-	public Product(String nombre, float precio, String type, String description,int cantidad) {
+	public Product(String nombre, float precio, String type, String description,int cantidad,String url) {
 		super();
+                this.url=url;
                 this.description=description;
 		this.price = precio;
 		this.name = nombre;
@@ -29,6 +32,12 @@ public class Product  {
 	}
         public String getType() {
             return type;
+        }
+        public void setUrl(String url) {
+            this.url = url;
+        }
+                public String getUrl() {
+            return url;
         }
         public void setType(String type) {
             this.type = type;
